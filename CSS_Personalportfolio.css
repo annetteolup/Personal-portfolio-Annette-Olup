@@ -1,0 +1,288 @@
+
+/* do we need the * code here? lets see*/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template-columns: minmax(180px,300px) 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "navbar navbar"
+        "sidebar main"
+        "footer footer";
+
+    background-color: rgb(27, 27, 27);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+
+}
+
+/* colors to be checked. effects such as half white half gray */
+
+/* h1, h2, h3 {
+    color:white;
+} */
+
+
+header {
+    grid-area: navbar;
+    padding: 12px;
+    background-color: rgb(43, 42, 42);
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li a {
+    color: rgb(193, 193, 193);
+    text-decoration: none;
+
+}
+
+.title {
+    padding: 12px;
+}
+
+
+aside {
+    grid-area: sidebar;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: rgb(230, 230, 230);
+    border-right: 2px solid rgb(82, 82, 82);
+    color: rgb(54, 54, 54);
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 50px;
+    /* SIDEBAR DETACHED FROM LEFT SIDE */
+}
+
+.profile{
+    text-align: center;
+}
+.profile img{
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+main {
+    grid-area: main;
+}
+
+.section{
+    padding: 80px 40px;
+    max-width: 1200px;
+}
+
+/* HERO*/
+.home{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-text h1{
+    font-size: 4rem;
+    line-height: 1;
+    max-width: 800px;
+}
+
+.title-text p{
+    color: rgb(182, 182, 182);
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.6;
+}
+.ict-title{
+    color: rgb(255, 255, 255);
+}
+.business-title{
+    color: rgb(254, 213, 245);
+}
+
+.text-link{
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+    padding-top: 2px;
+    transition: opacity 0.2s ease;
+}
+
+.text-link:hover{
+    opacity: 0.6;
+    /* hover color or not? */
+}
+
+.about-h2{
+    font-size: 3rem;
+}
+.about-get-to{
+    color: white;
+}
+
+.about-know-me{
+    color: rgb(254, 213, 245);
+}
+
+.experience-h2{
+    font-size: 3rem;
+}
+
+.experience-my{
+    color: white;
+}
+
+.experience-experiences{
+    color: rgb(254, 213, 245);
+}
+
+.experience-item{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 30px;
+    border-bottom: 1px solid rgb(65, 65, 65);
+    padding: 20px;
+
+}
+
+.projects-h2{
+    font-size: 3rem;
+}
+
+.projects-recent{
+    color: white;
+}
+
+.projects-projects{
+    color: rgb(254, 213, 245);
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-grid {
+    width: auto;
+}
+/* project cards width! */
+
+.project-card{
+
+    border: 1px solid rgb(55,55,55);
+    background-color: rgb(43, 42, 42);
+    transition: opacity 0.2s ease;
+    border-radius: 20px;
+    padding: 12px 12px;
+    padding-bottom: 25px;
+    margin: 12px 12px;
+}
+
+.project-card:hover{
+    border-color: rgb(100,100,100);
+}
+
+.project-description{
+    padding: 3px;
+    font-size: 0.90rem;
+}
+
+.tags-area{
+    padding: 15px;
+}
+.project-tags{
+    color: rgb(193, 193, 193);
+    font-size: 0.85rem;
+}
+
+.btn {
+    border-radius: 10px;
+    color: white;
+    background-color:gray;
+    border: 1px solid rgb(147, 146, 146);
+    padding: 10px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+/* CHECK TRANSITION, NOT WORKING? */
+
+.btn:hover{
+    background-color: rgb(254, 213, 245);
+    color: rgb(54, 54, 54);
+}
+
+.contact-h2{
+    font-size: 3rem;
+}
+
+.contact-lets-work{
+    color: white;
+}
+
+.contact-together{
+    color: rgb(254, 213, 245);
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea{
+    padding: 12px;
+    background-color: rgb(43, 42, 42);
+    border: 1px solid rgb(55,55,55);
+    color: white;
+}
+
+.form-send{
+    background-color: rgb(254, 213, 245);
+    color: aliceblue;
+    padding: 12px 24px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem ;
+    font-weight: bold; 
+    /* width: fit-content; */
+    transition: opacity 0.2s ease;
+}
+
+.form-send:hover{
+    background-color: rgba(147, 146, 146, 0.403);
+}
+
+footer{
+    grid-area: footer;
+    color: grey;
+    background-color: rgb(43, 42, 42);
+    text-align: center;
+    padding: 0px;
+    font-size: 0.8rem;
+}
+

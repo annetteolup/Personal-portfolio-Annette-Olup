@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+        <!--improve meta description and add icon to tab-->
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annette's Portfolio</title>
+    <meta name="description" content="Annette's Personal portfolio; software engineering and digital business">
+    <link rel="stylesheet" href="CSS_Personalportfolio.css">
+    <!-- <link rel="icon" href=""> -->
+</head>
+
+
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <ul class = "list">
+                    <li class = "item"><a href="#home">Home</a></li>
+                    <li class = "item"><a href="#about">About</a></li>
+                    <li class = "item"><a href="#experience">Experience</a></li>
+                    <li class = "item"><a href="#projects">Projects</a></li>
+                    <li class = "item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+
+        <!--fixed block left side-->
+        
+        <aside class="sidebar">
+                
+                <div class="profile">
+                    
+                    <img src="profilepic.jpg" alt="Annette Olup">
+                    <h2>Annette Olup</h2>
+                    <p>ICT Engineering Student <br>&<br>Digital Business Professional</p>
+                    <p>Welcome to my personal portfolio.</p>
+                    <p>Feel free to contact me! </p>
+                </div>
+        </aside>
+
+
+
+        
+        <main>
+            
+            <!-- HOME --> 
+            
+            <section id="home" class="section home">
+                
+                <div class="title-text">
+
+                    <h1>
+                        <span class="ict-title">ICT ENGINEERING</span><br>
+                        <span class="business-title">DIGITAL BUSINESS</span>
+                    </h1>
+                    
+                    <p>Passionate about combining technology, business and creative
+                        problem-solving</p>
+
+                    <a href="#projects" class="text-link">View my projects →</a>
+                </div>
+
+                <!-- insert image somewhere here later --> 
+
+            </section>
+            
+
+           
+
+            <!-- ABOUT--> 
+            
+            <section id="about" class="section about">
+                    <h2 class="about-h2">
+                    <span class="about-get-to">GET TO</span><br>
+                    <span class="about-know-me">KNOW ME</span>
+                </h2>
+                    <p> my story, write more about myself here </p>
+            </section>
+
+
+            <!-- EXPERIENCE--> 
+            <section id="experience" class="section experience">
+                <h2 class="experience-h2">
+                    <span class="experience-my">MY</span><br>
+                    <span class="experience-experiences">EXPERIENCES</span>
+                </h2>
+
+                    <div class="experience-item"> 
+                        <h4>BMW -timeline-</h4>
+                        <p>About my experience ...</p>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <h4>Ledil -timeline-</h4>
+                        <p>About my experience ...</p>
+                    </div>
+            </section>
+            
+
+            <!-- change this section to article if needed?-->
+            <section id="projects" class="section projects">   
+                <!-- PROJECTS-->
+                <h2 class="projects-h2">
+                    <span class="projects-recent">RECENT</span><br>
+                    <span class="projects-projects">PROJECTS</span>
+                </h2>
+
+               <div class="project-container">
+                    <div class="project-grid">
+                        <article class="project-card">
+                            <h3> Project 1 </h3>
+                            <p class="project-description">Project description...</p>
+                            <div class="tags-area">
+                                <p class="project-tags"> HTML</p>
+                                <p class="project-tags"> CSS</p>
+                            </div>
+                            <a href="./Project1.html" class="btn">See more</a>
+                        </article>
+                    </div>
+                    
+                    <div class="project-grid">
+                        <article class="project-card">
+                            <h3> Project 2 </h3>
+                            <p class="project-description">Project description...</p>
+                            <button class="btn">See more </button>
+                        </article>
+                    </div>
+
+                    <div class="project-grid">
+                        <article class="project-card">
+                            <h3> Project 3 </h3>
+                            <p class="project-description">Project description...</p>
+                            <button class="btn">See more </button>
+                        </article>
+                    </div>
+                </div> 
+            </section> 
+            
+
+            <!-- CONTACT--> 
+            <section id="contact" class="section contact">
+                <h2 class="contact-h2">
+                    <span class="contact-lets-work">LETS WORK</span><br>
+                    <span class="contact-together">TOGETHER</span>
+                </h2>
+                <form action="/action_page.php">
+                    <div class="form-group">
+                    
+                        <label for="name">Name</label>
+                            <input type="text" id="name">
+
+                        <label for="email">Email</label>
+                            <input type="email" id="email" >
+
+                        <label for="message">Message</label>
+                            <!--<input type="text"><br>-->
+                            <textarea id="message" name="message" rows="15" placeholder="Message"></textarea> 
+
+                        <input class="form-send" type="submit" value="Send">
+                        <!-- HOW TO CHANGE SEND BUTTON -->
+                    </div>
+                </form>
+            </section>
+
+        </main>
+
+    
+        
+        <!-- TO DO: check functionality, id? --> 
+
+        <footer>
+            <p>© Annette Olup</p>
+        <!--social links etc?-->
+        <!--NAV?-->
+
+        </footer>
+
+        <!-- BACK TO TOP BUTTON  -->
+
+    </body>
+
+</html>
+
+<!--check heading? should we go up one heafding, h3 to h2 etc.-->

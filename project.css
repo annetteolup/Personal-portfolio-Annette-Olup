@@ -1,0 +1,33 @@
+
+
+/* HERO */
+
+.project-hero{
+    min-height: 400px;
+    background-image: url(./webdev.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.project-hero h1{
+    color: rgba(255, 255, 255, 0.907);
+    font-size: 4rem;
+    margin: 0;
+}
+
+.project-content{
+    display: grid;
+}
+
+
+/* LEFT */
+.project-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(106, 106, 106);
+}

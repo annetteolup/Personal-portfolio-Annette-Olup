@@ -187,32 +187,71 @@ main {
 }
 /* project cards width! */
 
-.project-card{
+/* ADD IMAGES IN BACKGROUND */
 
-    border: 1px solid rgb(55,55,55);
-    background-color: rgb(43, 42, 42);
+/* .project-card1{
+
+    border: 2px solid rgb(55,55,55);
+
     transition: opacity 0.2s ease;
     border-radius: 20px;
     padding: 12px 12px;
     padding-bottom: 25px;
     margin: 12px 12px;
+
+    background-image: url(./webdev.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.project-card1:hover{
+    border-color: rgb(100,100,100);
+} */
+
+.project-card{
+
+    color: white;
+    border: 1px solid rgb(55,55,55);
+    background-color: rgb(43, 42, 42);
+    text-align: center;
+
+    transition: opacity 0.2s ease; 
+    border-radius: 20px;
+    padding: 12px 12px;
+    padding-bottom: 25px;
+    margin: 12px 12px;
+    height: 250px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-image:-o-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    background-blend-mode: overlay;
 }
 
 .project-card:hover{
     border-color: rgb(100,100,100);
 }
 
-.project-description{
-    padding: 3px;
-    font-size: 0.90rem;
-}
 
 .tags-area{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding: 15px;
+
+    justify-content: center;
 }
 .project-tags{
     color: rgb(193, 193, 193);
     font-size: 0.85rem;
+
+    /* flex: 1 1 calc(50% - 12px); */
 }
 
 .btn {
@@ -232,6 +271,7 @@ main {
     background-color: rgb(254, 213, 245);
     color: rgb(54, 54, 54);
 }
+
 
 .contact-h2{
     font-size: 3rem;

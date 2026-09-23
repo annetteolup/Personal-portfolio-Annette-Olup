@@ -2,11 +2,17 @@
 
 /* HERO */
 
+html{
+    scroll-behavior: smooth;
+}
+
 .project-hero{
     min-height: 400px;
-    background-image: url(./webdev.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./webdev.jpg");
+   
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
     display: flex;
     align-items: center;

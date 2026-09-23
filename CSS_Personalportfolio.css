@@ -185,30 +185,6 @@ main {
 .project-grid {
     width: auto;
 }
-/* project cards width! */
-
-/* ADD IMAGES IN BACKGROUND */
-
-/* .project-card1{
-
-    border: 2px solid rgb(55,55,55);
-
-    transition: opacity 0.2s ease;
-    border-radius: 20px;
-    padding: 12px 12px;
-    padding-bottom: 25px;
-    margin: 12px 12px;
-
-    background-image: url(./webdev.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-.project-card1:hover{
-    border-color: rgb(100,100,100);
-} */
 
 .project-card{
 

@@ -52,6 +52,10 @@ header {
 
 }
 
+.navbar li a:hover{
+    color: rgb(254, 213, 245);
+}
+
 .title {
     padding: 12px;
 }

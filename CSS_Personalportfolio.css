@@ -74,6 +74,21 @@ aside {
     /* SIDEBAR DETACHED FROM LEFT SIDE */
 }
 
+/* Linkedin link in aside*/
+.linkedin-link{
+    display: inline-block;
+    margin-top: 10px;
+
+    color: rgb(54, 54, 54);
+    font-size: 2rem;
+
+    transition: 0.2s ease;
+}
+
+.linkedin-link:hover{
+    color: rgb(254, 213, 245);
+}
+
 .profile{
     text-align: center;
 }

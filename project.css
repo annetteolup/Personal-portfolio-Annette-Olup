@@ -6,6 +6,10 @@ html{
     scroll-behavior: smooth;
 }
 
+.project-body{
+    display: block;
+}
+
 .project-hero{
     min-height: 400px;
 
@@ -30,6 +34,7 @@ html{
 
 .project-content{
     display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 
@@ -38,5 +43,34 @@ html{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background-color: rgb(106, 106, 106);
+
+}
+
+.back-to-projects{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(43, 42, 42);
+    color: white;
+
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 50%;
+
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    transition: 0.2s ease;
+}
+
+.back-to-projects:hover{
+    background-color: rgb(254, 213, 245);
+    color: rgb(54, 54, 54);
 }

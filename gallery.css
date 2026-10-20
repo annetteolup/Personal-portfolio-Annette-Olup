@@ -40,8 +40,17 @@ html{
     flex-wrap: wrap;
 }
 
-.gallery-images img {
+/* .gallery-images img {
     width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+} */
+
+.gallery-images img {
+    /* Responsive sizing rules */
+    width: 100%;
+    max-width: 300px; /* Limits maximum width on large screens */
     height: 250px;
     object-fit: cover;
     border-radius: 15px;
